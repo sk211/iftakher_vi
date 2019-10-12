@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Medicin Project work</title>
+</head>
+
+<body>
+
+    <div class="container" id="header_top">
+        <div class="row">
+            <div class="panel with-nav-tabs panel-default">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1default" data-toggle="tab">My Profile</a></li>
+                        <li><a href="#tab2default" data-toggle="tab">My Schedule</a></li>
+                        <li><a href="#tab3default" data-toggle="tab">My consultation</a></li>
+                        <li><a href="#tab3default" data-toggle="tab">My lab Test Reurest</a></li>
+                        <li><a href="#tab3default" data-toggle="tab">My Assistanst</a></li>
+
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                        <div class="tab-pane fade" id="tab2default">Default 2</div>
+                        <div class="tab-pane fade" id="tab3default">
+                            <!-- sub tab -->
+                            <div class="panel with-nav-tabs panel-default">
+                                <div class="panel-heading">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#tab11default" data-toggle="tab">New Notes</a></li>
+                                        <li><a href="#tab7default" data-toggle="tab">New nots</a></li>
+                                        <li><a href="#tab8default" data-toggle="tab">Edit Notes</a></li>
+                                        <li><a href="#8" data-toggle="tab">My Notes</a></li>
+                                        <li><a href="#tab3default" data-toggle="tab">consultation notes</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade in active" id="tab11default">
+                                            <!-- new Notes section statt here -->
+
+                                            <table style="border:1px solid #333;" class="table">
+                                                <form method="post" action="">
+
+
+                                                    <div class="row">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="col-md-2">Present Name:</td>
+                                                                <td><input class="form-control" type="text"
+                                                                        class="col-md-10"></td>
+                                                                <td>Date of Barth</td>
+                                                                <td> <input class="form-control" placeholder="Date"
+                                                                        class="textbox-n" type="text"
+                                                                        onfocus="(this.type='date')" id="date"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Allages:</td>
+
+                                                                <td><input class="form-control" type="text"
+                                                                        class="col-md-12"></td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Medications:</td>
+
+                                                                <td><input class="form-control" type="text"
+                                                                        class="col-md-12"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Date of visit:</td>
+
+                                                                <td><input class="form-control" type="Date">
+                                                                </td>
+                                                                <td>Age:</td>
+
+                                                                <td><input class="form-control" class="col-md-5"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>Height:</td>
+
+                                                                <td><input class="form-control" class="col-md-5"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>Weight:</td>
+
+                                                                <td><input class="form-control" class="col-md-5"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>%Sa02:</td>
+
+                                                                <td><input class="form-control" class="col-md-8"
+                                                                        type="number">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Date of Last visit:</td>
+
+                                                                <td><input class="form-control" type="Date">
+                                                                </td>
+                                                                <td>BMI:</td>
+
+                                                                <td><input class="form-control" class="col-md-5"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>BP:</td>
+
+                                                                <td><input class="form-control" class="col-md-5"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>PULSE:</td>
+
+                                                                <td><input class="form-control" class="col-md-5"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>Temp:</td>
+
+                                                                <td><input class="form-control" class="col-md-8"
+                                                                        type="number">
+                                                                </td>
+                                                                <td>RR:</td>
+
+                                                                <td><input class="form-control" class="col-md-8"
+                                                                        type="number">
+                                                                </td>
+                                                            </tr>
+
+
+                                                        </tbody>
+
+                                                    </div>
+
+
+                                            </table>
+                                            <div class="text-right">
+                                                <input type="submit" name="submit" value="Save" class="btn btn-primary">
+                                            </div>
+                                            <!-- new Notes section end here  -->
+
+
+                                            <!-- new Notes section statt here -->
+
+                                            <table style="border:1px solid #333;" class="table">
+                                                <div class="row">
+                                                    <tbody>
+
+                                                        <h4 clas="text-center">Prescription Rx:</h4>
+                                                        <tr>
+                                                            <td>
+
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Allages:</td>
+
+                                                            <td><input class="form-control" type="text"
+                                                                    class="col-md-12"></td>
+
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Medications:</td>
+
+                                                            <td><input class="form-control" type="text"
+                                                                    class="col-md-12"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Date of visit:</td>
+
+                                                            <td><input class="form-control" type="Date">
+                                                            </td>
+                                                            <td>Age:</td>
+
+                                                            <td><input class="form-control" class="col-md-5"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>Height:</td>
+
+                                                            <td><input class="form-control" class="col-md-5"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>Weight:</td>
+
+                                                            <td><input class="form-control" class="col-md-5"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>%Sa02:</td>
+
+                                                            <td><input class="form-control" class="col-md-8"
+                                                                    type="number">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Date of Last visit:</td>
+
+                                                            <td><input class="form-control" type="Date">
+                                                            </td>
+                                                            <td>BMI:</td>
+
+                                                            <td><input class="form-control" class="col-md-5"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>BP:</td>
+
+                                                            <td><input class="form-control" class="col-md-5"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>PULSE:</td>
+
+                                                            <td><input class="form-control" class="col-md-5"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>Temp:</td>
+
+                                                            <td><input class="form-control" class="col-md-8"
+                                                                    type="number">
+                                                            </td>
+                                                            <td>RR:</td>
+
+                                                            <td><input class="form-control" class="col-md-8"
+                                                                    type="number">
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+
+                                                </div>
+
+
+                                            </table>
+                                            <div class="text-right">
+                                                <input type="submit" name="submit" value="Save" class="btn btn-primary">
+                                            </div>
+                                            </form>
+                                            <!-- new Notes section end here  -->
+                                            <section>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <li style="background:antiquewhite;display:inline;">
+                                                            <strong>med03
+                                                                .name[000mg]:</strong> take {mon} in the morign {aft} in
+                                                            the arternoon and {evg} evening
+                                                        </li>
+                                                        <li><strong>med03
+                                                                .name[000mg]:</strong> take {mon} in the morign {aft} in
+                                                            the arternoon and {evg} evening
+                                                        </li>
+                                                        <li style="background:antiquewhite;display:inline;">
+                                                            <strong>med03
+                                                                .name[000mg]:</strong> take {mon} in the morign {aft} in
+                                                            the arternoon and {evg} evening
+                                                        </li>
+                                                        <li><strong>med03
+                                                                .name[000mg]:</strong> take {mon} in the morign {aft} in
+                                                            the arternoon and {evg} evening
+                                                        </li>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <section id="meddile_section">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-5" id="patient_com">
+                                                            <h4 class="text-center ">Patient's Complain's</h4>
+                                                            <form>
+                                                                <div class="input-group" id="add_new">
+                                                                    <input type="text" class="form-control"
+                                                                        aria-label="Text input with segmented dropdown button">
+                                                                    <div class="input-group-append">
+                                                                        <button type="button"
+                                                                            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            <span class="sr-only">Toggle
+                                                                                Dropdown</span><i
+                                                                                class="fas fa-caret-down"></i>
+                                                                        </button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Add new</button>
+
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item" href="#">Action</a>
+                                                                            <a class="dropdown-item" href="#">Another
+                                                                                action</a>
+                                                                            <a class="dropdown-item" href="#">Something
+                                                                                else here</a>
+                                                                            <div role="separator"
+                                                                                class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#">Separated
+                                                                                link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                    
+                                                                <div class="input-group ">
+                                                                  
+                                                                    <input type="text" class="form-control col-1"
+                                                                        placeholder="Complaine"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+                                                                        
+                                                                    <input type="text" class="form-control col-md-4"
+                                                                        placeholder="Desription"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+
+                                                                    <button class="btn btn-primary"
+                                                                        type="button">Save</button>
+
+                                                                </div>
+
+                                                            </form>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+
+                                                        </div>
+                                                        
+                                                        <div class="col-md-5" id="patient_com">
+                                                            <h4 class="text-center ">Patient's Complain's</h4>
+                                                            <form>
+                                                                <div class="input-group" id="add_new">
+                                                                    <input type="text" class="form-control"
+                                                                        aria-label="Text input with segmented dropdown button">
+                                                                    <div class="input-group-append">
+                                                                        <button type="button"
+                                                                            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            <span class="sr-only">Toggle
+                                                                                Dropdown</span><i
+                                                                                class="fas fa-caret-down"></i>
+                                                                        </button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Add new</button>
+
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item" href="#">Action</a>
+                                                                            <a class="dropdown-item" href="#">Another
+                                                                                action</a>
+                                                                            <a class="dropdown-item" href="#">Something
+                                                                                else here</a>
+                                                                            <div role="separator"
+                                                                                class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#">Separated
+                                                                                link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                    
+                                                                <div class="input-group ">
+                                                                  
+                                                                    <input type="text" class="form-control col-1"
+                                                                        placeholder="Complaine"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+                                                                        
+                                                                    <input type="text" class="form-control col-md-4"
+                                                                        placeholder="Desription"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+
+                                                                    <button class="btn btn-primary"
+                                                                        type="button">Save</button>
+
+                                                                </div>
+
+                                                            </form>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+
+                                                        </div>
+                                                        
+                                                        <div class="col-md-5" id="patient_com">
+                                                            <h4 class="text-center ">Patient's Complain's</h4>
+                                                            <form>
+                                                                <div class="input-group" id="add_new">
+                                                                    <input type="text" class="form-control"
+                                                                        aria-label="Text input with segmented dropdown button">
+                                                                    <div class="input-group-append">
+                                                                        <button type="button"
+                                                                            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            <span class="sr-only">Toggle
+                                                                                Dropdown</span><i
+                                                                                class="fas fa-caret-down"></i>
+                                                                        </button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Add new</button>
+
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item" href="#">Action</a>
+                                                                            <a class="dropdown-item" href="#">Another
+                                                                                action</a>
+                                                                            <a class="dropdown-item" href="#">Something
+                                                                                else here</a>
+                                                                            <div role="separator"
+                                                                                class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#">Separated
+                                                                                link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                    
+                                                                <div class="input-group ">
+                                                                  
+                                                                    <input type="text" class="form-control col-1"
+                                                                        placeholder="Complaine"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+                                                                        
+                                                                    <input type="text" class="form-control col-md-4"
+                                                                        placeholder="Desription"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+
+                                                                    <button class="btn btn-primary"
+                                                                        type="button">Save</button>
+
+                                                                </div>
+
+                                                            </form>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+
+                                                        </div>
+                                                        
+                                                        <div class="col-md-5" id="patient_com">
+                                                            <h4 class="text-center ">Patient's Complain's</h4>
+                                                            <form>
+                                                                <div class="input-group" id="add_new">
+                                                                    <input type="text" class="form-control"
+                                                                        aria-label="Text input with segmented dropdown button">
+                                                                    <div class="input-group-append">
+                                                                        <button type="button"
+                                                                            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            <span class="sr-only">Toggle
+                                                                                Dropdown</span><i
+                                                                                class="fas fa-caret-down"></i>
+                                                                        </button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Add new</button>
+
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item" href="#">Action</a>
+                                                                            <a class="dropdown-item" href="#">Another
+                                                                                action</a>
+                                                                            <a class="dropdown-item" href="#">Something
+                                                                                else here</a>
+                                                                            <div role="separator"
+                                                                                class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item" href="#">Separated
+                                                                                link</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                    
+                                                                <div class="input-group ">
+                                                                  
+                                                                    <input type="text" class="form-control col-1"
+                                                                        placeholder="Complaine"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+                                                                        
+                                                                    <input type="text" class="form-control col-md-4"
+                                                                        placeholder="Desription"
+                                                                        aria-label="Recipient's username"
+                                                                        aria-describedby="basic-addon2">
+
+                                                                    <button class="btn btn-primary"
+                                                                        type="button">Save</button>
+
+                                                                </div>
+
+                                                            </form>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+                                                            <li style="background:antiquewhite;"><strong>med03
+                                                                    .name[000mg]:</strong> take {mon} in the morign
+                                                                {aft} in
+                                                                the arternoon and {evg} evening
+                                                            </li>
+
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <div class="tab-pane fade" id="tab7default">Default 2</div>
+                                            <div class="tab-pane fade" id="tab8default">Default 3</div>
+                                            <div class="tab-pane fade" id="tab44default">Default 4</div>
+                                            <div class="tab-pane fade" id="tab55default">Default 5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab4default">Default 4</div>
+                            <div class="tab-pane fade" id="tab5default">Default 5</div>
+                        </div>
+                    </div>
+                </div>
+                </di>
+            </div>
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
